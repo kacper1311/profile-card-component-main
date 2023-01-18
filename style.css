@@ -1,0 +1,313 @@
+/* ---------------------------------------------------------------Colors--------------------------------------------------------------- */
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+/* ---------------------------------------------------------------Styling--------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    background-color: var(--Dark-cyan);
+}
+
+main {
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+/* ----------------------background-ball div---------------------- */
+
+#top {
+    position: fixed;
+    left: -10%;
+    top: -58%;
+    z-index: 0;
+}
+
+#bottom {
+    position: fixed;
+    right: -10%;
+    bottom: -60%;
+    z-index: 0;
+}
+
+/* ----------------------profile-card div---------------------- */
+#profile-card {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 350px;
+    z-index: 1;
+}
+
+#backgroun-picture {
+    position: static;
+    border-radius: 0;
+}
+
+/* ------------profile-picture div------------ */
+#profile-picture {
+    display: grid;
+    place-content: center;
+    margin-top: -15%;
+}
+
+#profile-picture img{
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+/* ------------text div------------ */
+#text {
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+#text h1 {
+    font-size: 1.5rem;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+    padding: .5rem;
+}
+
+#text a {
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    margin-left: .5rem;
+}
+
+#text p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+
+/* ------------numbers div------------ */
+#numbers {
+    font-family: 'Kumbh Sans', sans-serif;
+    border-top: 1px solid var(--Dark-gray);
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#numbers h1 {
+    font-size: 1.4rem;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+#numbers p {
+    letter-spacing: 1px;
+    font-size: .9rem;
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+/* ----------------------footer---------------------- */
+footer { 
+    z-index: 1;
+    padding: 1.5rem;
+    font-size: 13px; 
+    text-align: center; 
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* ---------------------------------------------------------------Responsive--------------------------------------------------------------- */
+@media only screen and (max-width: 1551px){
+    #top {
+        left: -18%;
+        top: -60%;
+    }
+    
+    #bottom {
+        right: -13%;
+        bottom: -63%;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    #top {
+        left: -23%;
+        top: -60%;
+    }
+    
+    #bottom {
+        right: -18%;
+        bottom: -63%;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    #top {
+        left: -28%;
+        top: -63%;
+    }
+    
+    #bottom {
+        right: -23%;
+        bottom: -66%;
+    }
+}
+
+@media only screen and (max-width: 1190px){
+    #top {
+        left: -33%;
+        top: -63%;
+    }
+    
+    #bottom {
+        right: -28%;
+        bottom: -66%;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    #top {
+        left: -38%;
+        top: -63%;
+    }
+    
+    #bottom {
+        right: -33%;
+        bottom: -66%;
+    }
+}
+
+@media only screen and (max-width: 1040px){
+    #top {
+        left: -43%;
+        top: -65%;
+    }
+    
+    #bottom {
+        right: -38%;
+        bottom: -68%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #top {
+        left: -53%;
+        top: -65%;
+    }
+    
+    #bottom {
+        right: -48%;
+        bottom: -68%;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    #top {
+        left: -63%;
+        top: -65%;
+    }
+    
+    #bottom {
+        right: -58%;
+        bottom: -68%;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    #top {
+        left: -73%;
+        top: -65%;
+    }
+    
+    #bottom {
+        right: -68%;
+        bottom: -68%;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    #top {
+        left: -93%;
+        top: -65%;
+    }
+    
+    #bottom {
+        right: -88%;
+        bottom: -68%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #top {
+        left: -113%;
+        top: -65%;
+    }
+    
+    #bottom {
+        right: -108%;
+        bottom: -68%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #top {
+        left: -143%;
+        top: -65%;
+    }
+    
+    #bottom {
+        right: -138%;
+        bottom: -68%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #top {
+        left: -163%;
+        top: -65%;
+    }
+    
+    #bottom {
+        right: -158%;
+        bottom: -68%;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    #top {
+        left: -183%;
+        top: -65%;
+    }
+    
+    #bottom {
+        right: -178%;
+        bottom: -68%;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #top {
+        left: -203%;
+        top: -65%;
+    }
+    
+    #bottom {
+        right: -198%;
+        bottom: -68%;
+    }
+}
